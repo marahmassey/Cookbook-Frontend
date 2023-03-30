@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Recipes</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Logo or Website Name-->
+            <h1 class="logo">Logo</h1>
+            <h1 class="pagename">My Recipes</h1>
+            <!-- Menu -->
+            <ul class="navlinks">
+                <!-- Checkbox -->
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- Nav Manus -->
+                <div class="menu">
+                    <li class="menu-item"><a href="myrecipespage.html">Recipes</a></li>
+                    <li class="menu-item"><a href="mygroupspage.html">Groups</a></li>
+                    <li class="menu-item"><a href="myaccountpage.html">Account</a></li>
+                    <li><a href="loginpage.html">Logout</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Options Bar -->
+        <div class="options-container">
+            <!-- Buttons -->
+            <div class="options-buttons">
+                <!-- Add Recipe Button -->
+                <button class="opt-btn" onclick="window.location.href = 'addrecipe.html';">Add Recipe</button>
+                
+                <!-- Category Dropdown -->
+                <div class="dropdown">
+                    <button class="opt-btn">Categories</button>
+                    <div class="dropdown-options">
+                        <a href="#">Main Courses</a>               
+                        <a href="#">Appetizers</a>
+                        <a href="#">Side Dishes</a>
+                        <a href="#">Desserts</a>
+                        <a href="#">Entres</a>
+                        <a href="#">Soups</a>
+                        <a href="#">Snacks</a>
+                        <a href="#">Beverages</a>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Recipes List -->
+        <div class="pagebody">
+            <div class="recipe-container">
+                <img src="images/black-forest-cake.jpg" alt="Black Forest Cake">
+                <div class="recipe-info">
+                    <h2><a href="specificrecipe.html">Black Forest Cake</a></h2>
+                    <h4>Time: 125m</h4>
+                    <h4>Categories: Dessert</h4>
+                </div>
+            </div>
+
+            <hr class="horz-divider">
+
+            <div class="recipe-container">
+                <img src="images/bacon-wrapped-potato-bites.jpg" alt="Bacon-wrapped potato bites with spicy sour cream dippin sauce">
+                <div class="recipe-info">
+                    <h2><a href="#">Bacon-Wrapped Potato Bites with Spicy Sour Cream Dipping Sauce</a></h2>
+                    <h4>Time: 75m</h4>
+                    <h4>Categories: Snack</h4>
+                </div>
+            </div>
+
+            <hr class="horz-divider">
+
+            <div class="recipe-container">
+                <img src="images/chicken-zoodle-soup.jpg" alt="Chicken Zoodle Soup">
+                <div class="recipe-info">
+                    <h2><a href="#">Chicken Zoodle Soup</a></h2>
+                    <h4>Time: 30m</h4>
+                    <h4>Categories: Main Course, Soup</h4>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Recipe</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Logo or Website Name-->
+            <h1 class="logo">Logo</h1>
+            <h1 class="pagename">Recipe Page</h1>
+            <!-- Menu -->
+            <ul class="navlinks">
+                <!-- Checkbox -->
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- Nav Manus -->
+                <div class="menu">
+                    <li class="menu-item"><a href="myrecipespage.html">Recipes</a></li>
+                    <li class="menu-item"><a href="mygroupspage.html">Groups</a></li>
+                    <li class="menu-item"><a href="myaccountpage.html">Account</a></li>
+                    <li><a href="loginpage.html">Logout</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="pagebody">
+            <img class="recipe-banner" src="images/black-forest-cake-banner.jpg" alt="Black Forest Cake">
+            
+            <div class="recipe-name">
+                <h1>Black Forest Cake</h1>
+                <button type="submit"><i class="fa fa-edit"></i></button>
+            </div>
+
+            <div class="info">
+                <p><b>Servings:</b> 14 slices</p>
+                <p><b>Prep Time:</b> 75 minutes</p>
+                <p><b>Cook Time:</b> 45 minutes</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Ingredients')" id="defaultOpen">Ingredients</button>
+                <button class="tablinks" onclick="openTab(event, 'Directions')">Directions</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="Ingredients" class="tabcontent">
+                <ul>
+                    <li>1 cup all-purpose flour</li>
+                    <li>1/2 cup unsweetened cocoa</li>
+                    <li>9 large eggs at room temperature</li>
+                    <li>1 cup sugar</li>
+                    <li>4 tablespoons unsalted butter melted and cooled to room temperature</li>
+                    <li>1/2 teaspoon vanilla extract</li>
+                    <li>4 cups (or 1 pound) Washington sweet cherries pitted</li>
+                    <li>12 whole Washington sweet cherries to top the cake</li>
+                    <li>3 tablespoons kirsch (a cherry liqueur)</li>
+                    <li>1/4 cup cold water</li>
+                    <li>3 1/2 cups heavy whipping cream</li>
+                    <li>1/3 cup powdered sugar</li>
+                    <li>1 tablespoon kirsch (a cherry liqueur)</li>
+                    <li>8 ounces dark chocolate shaved with a vegetable peeler</li>
+                </ul>
+            </div>
+
+            <div id="Directions" class="tabcontent">
+                <ol>
+                    <li>Preheat the oven to 350 degrees. Line the bottoms of two 9" round cake pans with parchment. Do not grease the sides of the pans.</li>
+                    <li>In a medium bowl, whisk together flour and cocoa powder. Set aside.</li>
+                    <li>In a standing mixer with the whisk attachment, or with an electric hand mixer, beat eggs on high for 1 minute. With the motor running, gradually add 1 cup sugar and continue beating on high speed a full 8 minutes. The mixture will be thick and fluffy.</li>
+                    <li>Using a spatula, add the dry ingredients in 3 batches by hand, mixing just until no streaks remain. Scrape the bottom of the bowl to make sure all ingredients are incorporated. Do not over-mix and deflate the batter.</li>
+                    <li>Gently fold in vanilla and butter in a steady stream, folding and scraping as you pour to keep butter from pooling at the bottom. Fold until just incorporated. Once butter is added, the cake must be baked right away or the batter will deflate.</li>
+                    <li>Divide batter equally between two prepared cake pans and bake immediately for 20-25 minutes, or until a toothpick inserted into the center of the cake comes out clean.</li>
+                    <li>Let cool in the pans for 10-15 minutes, then run a thin-edged knife around the edges to loosen the cake. Invert layers onto a wire rack and remove parchment paper. When cakes cool completely and you're ready to assemble the cake, slice each layer in half horizontally with a long serrated knife.</li>
+                    <li>Roughly chop the pitted cherries and place in a medium bowl with 3 tablespoons kirsch. Let sit at room temperature for at least 30 minutes, stirring occasionally.</li>
+                    <li>Using a sieve, drain cherries and reserve both cherries and syrup. Add 1/4 cup cold water to the syrup (you should have roughly 1/3 cup of syrup).</li>
+                    <li>For best results, freeze the mixing bowl and whisk attachment 15 minutes prior to using. Beat heavy cream with whisk attachment on high speed until soft peaks form, then add powdered sugar and remaining 1 tablespoon kirsch and beat on high until stiff and spreadable, 1-2 minutes. Refrigerate until ready to use.</li>
+                    <li>Place the first layer on a cake stand and brush with 1/4 of the syrup. Spread 3/4 cup frosting over the top of the first layer, then top with 1/3 of the chopped cherries. Repeat with the remaining layers, using the flattest layer to top the cake.</li>
+                    <li>Transfer 1 1/2 cups frosting to a pastry bag with a large flower tip and refrigerate until ready to use (try not to handle the bag too much or the cream will soften). Fill the cracks along the sides of the cake with frosting then frost the top and sides with remaining frosting.</li>
+                    <li>Cover sides and top of cake with chocolate shavings leaving a 1" perimeter on top for piping frosting. Pipe rounds of frosting around the top of the cake and place a whole cherry over each one. Refrigerate cake for at least 4 hours or overnight before serving.</li>
+                </ol>
+            </div>
+            
+            <script>
+                // Get element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+    </body>
+</html>

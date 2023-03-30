@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Recipe</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- Logo or Website Name-->
+            <h1 class="logo">Logo</h1>
+            <h1 class="pagename"></h1>
+            <!-- Menu -->
+            <ul class="navlinks">
+                <!-- Checkbox -->
+                <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- Nav Manus -->
+                <div class="menu">
+                    <li class="menu-item"><a href="myrecipespage.html">Recipes</a></li>
+                    <li class="menu-item"><a href="mygroupspage.html">Groups</a></li>
+                    <li class="menu-item"><a href="myaccountpage.html">Account</a></li>
+                    <li><a href="loginpage.html">Logout</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="pagebody">
+            <h1>Add New Recipe</h1>
+            <form>
+                <label for="">Recipe Image</label>
+                <img src="images/black-forest-cake.jpg">
+
+                <label for="">Recipe Banner</label>
+                <img src="images/black-forest-cake-banner.jpg">
+
+                <label for="recipename">Recipe Name</label>
+                <input type="text" name="recipename">
+
+                <label for="servings">Number of Servings</label>
+                <input type="text" name="servings">
+
+                <label for="preptime">Prep Time</label>
+                <input type="text" name="preptime">
+
+                <label for="cookingtime">Cooking Time</label>
+                <input type="text" name="cookingtime">
+
+
+                <label for="ing1">Ingredients</label>
+                <input type="text" name="ing1">
+
+                <h3>Directions</h3>
+                <label for="step1">Step 1</label>
+                <input type="text" name="step1">
+                <label for="step2">Step 2</label>
+                <input type="text" name="step2">
+                <label for="step3">Step 3</label>
+                <input type="text" name="step3">
+
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+    </body>
+</html>
