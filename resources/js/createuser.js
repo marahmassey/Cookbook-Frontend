@@ -16,7 +16,15 @@ formElement.addEventListener('submit', event => {
             "Content-Type": "application/json"
         },
         body: data
-    }).then(res => res.json())
-        .then(data => console.log(data))
+    })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if (data.error !== null) {
+                alert(data.error.errorMessage);
+            } else {
+                window.location.href = "myrecipespage.html";
+            }
+        })
         .catch(error => console.log(error));
 });

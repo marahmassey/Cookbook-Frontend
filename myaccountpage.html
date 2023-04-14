@@ -3,36 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>My Account</title>
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="resources/css/style2.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <script src="resources/js/script.js"></script>
+        <script src="resources/js/header.js"></script>
     </head>
     <body>
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <!-- Logo or Website Name-->
-            <h1 class="logo">Logo</h1>
-            <h1 class="pagename">My Account</h1>
-            <!-- Menu -->
-            <ul class="navlinks">
-                <!-- Checkbox -->
-                <input type="checkbox" id="checkbox_toggle"/>
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <!-- Nav Manus -->
-                <div class="menu">
-                    <li><a href="recipelistpage.html">Recipes</a></li>
-                    <li><a href="grouplistpage.html">Groups</a></li>
-                    <li><a href="accountpage.html">Account</a></li>
-                    <li><a href="loginpage.html">Logout</a></li>
-                </div>
-            </ul>
-        </nav>
+        <header-component></header-component>
 
         <div class="pagebody">
             <div class="personal-info-container">
                 <h1>Personal Info <button type="submit"><i class="fa fa-edit"></i></button></h1>
                 <div class="img-table-container">
-                    <img src="images/profile-pic.png">
+                    <img src="resources/images/profile-pic.png">
                     <table class="table-info">
                         <tr>
                             <td class="table-label">Name:</td>

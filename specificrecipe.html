@@ -3,34 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Recipe</title>
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="resources/css/style2.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="script.js"></script>
+        <script src="resources/js/script.js"></script>
+        <script src="resources/js/header.js"></script>
     </head>
 
     <body>
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <!-- Logo or Website Name-->
-            <h1 class="logo">Logo</h1>
-            <h1 class="pagename">Recipe Page</h1>
-            <!-- Menu -->
-            <ul class="navlinks">
-                <!-- Checkbox -->
-                <input type="checkbox" id="checkbox_toggle"/>
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                <!-- Nav Manus -->
-                <div class="menu">
-                    <li class="menu-item"><a href="myrecipespage.html">Recipes</a></li>
-                    <li class="menu-item"><a href="mygroupspage.html">Groups</a></li>
-                    <li class="menu-item"><a href="myaccountpage.html">Account</a></li>
-                    <li><a href="loginpage.html">Logout</a></li>
-                </div>
-            </ul>
-        </nav>
+        <header-component></header-component>
 
         <div class="pagebody">
-            <img class="recipe-banner" src="images/black-forest-cake-banner.jpg" alt="Black Forest Cake">
+            <img class="recipe-banner" src="resources/images/black-forest-cake-banner.jpg" alt="Black Forest Cake">
             
             <div class="recipe-name">
                 <h1>Black Forest Cake</h1>
@@ -88,7 +71,7 @@
             </div>
             
             <script>
-                // Get element with id="defaultOpen" and click on it
+                //By default, the tab with with id="defaultOpen" is displayed
                 document.getElementById("defaultOpen").click();
             </script>
         </div>

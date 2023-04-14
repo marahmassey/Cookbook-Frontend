@@ -1,3 +1,8 @@
+function logout(){
+    sessionStorage.removeItem('userID')
+    window.location.href = "loginpage.html";
+}
+
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
