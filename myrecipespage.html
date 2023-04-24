@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="resources/js/script.js"></script>
         <script src="resources/js/header.js"></script>
+        <script src="resources/js/loadrecipelist.js"></script>
+        <script src="resources/js/recipe.js"></script>
     </head>
-    <body>
+    <body onload="listRecipes()">
         <header-component></header-component>
 
         <!-- Options Bar -->
@@ -45,7 +47,7 @@
 
         <!-- Recipes List -->
         <div class="pagebody">
-            <div class="recipe-container">
+            <!-- <div class="recipe-container">
                 <img src="resources/images/black-forest-cake.jpg" alt="Black Forest Cake">
                 <div class="recipe-info">
                     <h2><a href="specificrecipe.html">Black Forest Cake</a></h2>
@@ -74,7 +76,7 @@
                     <h4>Time: 30m</h4>
                     <h4>Categories: Main Course, Soup</h4>
                 </div>
-            </div>
+            </div> -->
         </div>
         
     </body>

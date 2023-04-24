@@ -21,10 +21,16 @@ formElement.addEventListener('submit', event => {
         .then(data => {
             console.log(data)
             if (data.error !== null) {
-                alert(data.error.errorMessage);
+                alert(data.error.errorMessage)
             } else {
                 sessionStorage.setItem('userID', data.userID)
-                window.location.href = "myrecipespage.html";
+                if (data.recipes.recipeModels !== null){ 
+                    sessionStorage.setItem('recipeList', JSON.stringify(data.recipes.recipeModels))
+                }
+                window.location.href = "myrecipespage.html"
+                // if (data.recipes.recipeModels !== null){
+                //     listRecipes(data.recipes.recipeModels)
+                // }
             }
         })
         .catch(error => console.log(error));
