@@ -11,39 +11,51 @@
         <header-component></header-component>
 
         <div class="pagebody">
-            <h1>Add New Recipe</h1>
-            <form>
-                <label for="">Recipe Image</label>
-                <img src="recoures/images/black-forest-cake.jpg">
+            <form class="recipeform">
+                <h1>Add New Recipe</h1>
+                <!-- <label for="">Recipe Image</label>
+                <img src="">
 
                 <label for="">Recipe Banner</label>
-                <img src="recoures/images/black-forest-cake-banner.jpg">
+                <img src=""> -->
 
-                <label for="recipename">Recipe Name</label>
-                <input type="text" name="recipename">
-
-                <label for="servings">Number of Servings</label>
-                <input type="text" name="servings">
-
-                <label for="preptime">Prep Time</label>
-                <input type="text" name="preptime">
-
-                <label for="cookingtime">Cooking Time</label>
-                <input type="text" name="cookingtime">
-
-
-                <label for="ing1">Ingredients</label>
-                <input type="text" name="ing1">
-
-                <h3>Directions</h3>
-                <label for="step1">Step 1</label>
-                <input type="text" name="step1">
-                <label for="step2">Step 2</label>
-                <input type="text" name="step2">
-                <label for="step3">Step 3</label>
-                <input type="text" name="step3">
-
-                <button type="submit">Add Recipe</button>
+                <div>
+                    <label for="recipename">Recipe Name:</label>
+                    <input type="text" name="recipename">
+                </div>
+                <div>
+                    <label for="servings">Servings</label>
+                    <input type="text" name="servings">
+                </div>
+                <div>
+                    <label for="preptime">Prep Time</label>
+                    <input type="number" name="preptime">
+                </div>
+                <div>
+                    <label for="cookingtime">Cooking Time</label>
+                    <input type="number" name="cookingtime">
+                </div>
+                <div class="ingredientlist">
+                    <h3>Ingredients</h3>
+                    <label for="ing1"></label>
+                    <input type="text" name="ing1">
+                    <label for="ing2"></label>
+                    <input type="text" name="ing2">
+                    <label for="ing3"></label>
+                    <input type="text" name="ing3">
+                </div>
+                <div>
+                    <h3>Directions</h3>
+                    <label for="step1">Step 1</label>
+                    <input type="text" name="step1">
+                    <label for="step2">Step 2</label>
+                    <input type="text" name="step2">
+                    <label for="step3">Step 3</label>
+                    <input type="text" name="step3">
+                </div>
+                <div>
+                    <button type="submit">Add Recipe</button>
+                </div>                
             </form>
         </div>
     </body>

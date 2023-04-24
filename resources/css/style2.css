@@ -417,3 +417,36 @@ a {
 }
 
 /* Add Recipe */
+.recipeform h1, .recipeform h3 {
+    text-align: center;
+}
+.recipeform div {
+    display: block;
+    text-align: center;
+}
+.recipeform label {
+    display: inline-block;
+    text-align: right;
+    width: 15%;
+}
+
+.recipeform input {
+    width: 79%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.recipeform button {
+    background-color: teal;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+}
