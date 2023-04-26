@@ -1,5 +1,5 @@
 function logout(){
-    sessionStorage.removeItem('userID')
+    sessionStorage.clear();
     window.location.href = "loginpage.html";
 }
 

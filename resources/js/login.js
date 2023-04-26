@@ -28,9 +28,6 @@ formElement.addEventListener('submit', event => {
                     sessionStorage.setItem('recipeList', JSON.stringify(data.recipes.recipeModels))
                 }
                 window.location.href = "myrecipespage.html"
-                // if (data.recipes.recipeModels !== null){
-                //     listRecipes(data.recipes.recipeModels)
-                // }
             }
         })
         .catch(error => console.log(error));

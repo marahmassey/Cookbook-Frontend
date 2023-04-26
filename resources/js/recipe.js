@@ -31,14 +31,18 @@ class Recipe extends HTMLElement {
                 padding-top: 20px;
                 font-size: 20px;
             }
+
+            a {
+                cursor: pointer;
+            }
         </style>
 
         <div class="recipe-container">
             <img src="resources/images/black-forest-cake.jpg" alt="Black Forest Cake">
             <div class="recipe-info">
-                <h2><a href="specificrecipe.html">Placeholder</a></h2>
-                <h4>Time:</h4>
-                <h4>Category:</h4>
+                <h2><a id="" class="name" onclick="loadSpecificRecipe(this.id)">Placeholder</a></h2>
+                <h4 class="time">Time:</h4>
+                <h4 class="category">Category:</h4>
             </div>
         </div>
       `;
