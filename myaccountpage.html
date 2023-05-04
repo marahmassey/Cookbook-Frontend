@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="resources/js/script.js"></script>
         <script src="resources/js/header.js"></script>
+        <script src="resources/js/loadaccount.js"></script>
     </head>
-    <body>
+    <body onload="populateAccount()">
         <header-component></header-component>
 
         <div class="pagebody">
@@ -19,12 +20,12 @@
                     <table class="table-info">
                         <tr>
                             <td class="table-label">Name:</td>
-                            <td class="personal-info">Firstname</td>
-                            <td class="personal-info">Lastname</td>
+                            <td class="personal-info" id="firstname">Firstname</td>
+                            <td class="personal-info" id="lastname">Lastname</td>
                         </tr>
                         <tr>
                             <td class="table-label">Email:</td>
-                            <td colspan="2" class="personal-info">example@email.com</td>
+                            <td colspan="2" class="personal-info" id="email">example@email.com</td>
                         </tr>
                     </table>
                 </div>

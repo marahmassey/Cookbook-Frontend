@@ -38,7 +38,7 @@ class Recipe extends HTMLElement {
         </style>
 
         <div class="recipe-container">
-            <img src="resources/images/black-forest-cake.jpg" alt="Black Forest Cake">
+            <img src="" class="recipe-img">
             <div class="recipe-info">
                 <h2><a id="" class="name" onclick="loadSpecificRecipe(this.id)">Placeholder</a></h2>
                 <h4 class="time">Time:</h4>

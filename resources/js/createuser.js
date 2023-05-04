@@ -23,7 +23,8 @@ formElement.addEventListener('submit', event => {
             if (data.error !== null) {
                 alert(data.error.errorMessage);
             } else {
-                window.location.href = "myrecipespage.html";
+                alert("User has been created");
+                window.location.href = "loginpage.html";
             }
         })
         .catch(error => console.log(error));

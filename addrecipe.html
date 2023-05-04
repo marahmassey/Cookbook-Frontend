@@ -6,57 +6,87 @@
         <link rel="stylesheet" href="resources/css/style2.css">
         <script src="resources/js/script.js"></script>
         <script src="resources/js/header.js"></script>
+        <!-- <script src="resources/js/addtolist.js"></script> -->
     </head>
     <body>
         <header-component></header-component>
 
         <div class="pagebody">
-            <form class="recipeform">
+            <form method="POST" class="recipeform">
                 <h1>Add New Recipe</h1>
-                <!-- <label for="">Recipe Image</label>
-                <img src="">
+                <label for="imageData">Recipe Image:</label>
+                <input type="file" accept="image/png, image/jpeg, image/jpg" name="imageData" id="imageData">
 
-                <label for="">Recipe Banner</label>
+                <!-- <label for="">Recipe Banner</label>
                 <img src=""> -->
 
-                <div>
+                <div class="div1">
                     <label for="recipename">Recipe Name:</label>
-                    <input type="text" name="recipename">
+                    <input type="text" name="recipename" maxlength="256" required>
                 </div>
-                <div>
-                    <label for="servings">Servings</label>
-                    <input type="text" name="servings">
+                <div class="div2">
+                    <div>
+                        <label for="servings">Servings:</label>
+                        <input type="text" name="servings" maxlength="50">
+                    </div>
+                    <div class="time">
+                        <label for="preptime">Prep Time (in minutes):</label>
+                        <input type="number" name="preptime" min="0" max="2147483647">
+                    </div>
+                    <div class="time">
+                        <label for="cookingtime">Cooking Time (in minutes):</label>
+                        <input type="number" name="cookingtime" min="0" max="2147483647">
+                    </div>
                 </div>
-                <div>
-                    <label for="preptime">Prep Time</label>
-                    <input type="number" name="preptime">
-                </div>
-                <div>
-                    <label for="cookingtime">Cooking Time</label>
-                    <input type="number" name="cookingtime">
+                <div class="category">
+                    <label for="categories">Category:</label>
+                    <select id="categories" name="categories">
+                        <option value="1">Main Course</option>
+                        <option value="2">Side</option>
+                        <option value="3">Appetizer</option>
+                        <option value="4">Dessert</option>
+                        <option value="5">Snack</option>
+                    </select>
                 </div>
                 <div class="ingredientlist">
                     <h3>Ingredients</h3>
-                    <label for="ing1"></label>
-                    <input type="text" name="ing1">
-                    <label for="ing2"></label>
-                    <input type="text" name="ing2">
-                    <label for="ing3"></label>
-                    <input type="text" name="ing3">
+                    <ul id="ing-list">
+                        <li><input type="text" name="ingredientName1"></li>
+                    </ul>
+                    <button type="button" onclick="addIngredient()">Add An Ingredient</button>
                 </div>
-                <div>
+                <div class="directionslist">
                     <h3>Directions</h3>
-                    <label for="step1">Step 1</label>
-                    <input type="text" name="step1">
-                    <label for="step2">Step 2</label>
-                    <input type="text" name="step2">
-                    <label for="step3">Step 3</label>
-                    <input type="text" name="step3">
+                    <ol id="dir-list">
+                        <li><input type="text" name="directionName1"></li>
+                    </ol>
+                    <button type="button" onclick="addDirection()">Add A Direction</button>
                 </div>
                 <div>
                     <button type="submit">Add Recipe</button>
-                </div>                
+                </div>
             </form>
+
+            <!-- <form class="recipeform" id="recipeform">
+                <label for="recipename">Recipe Name:</label>
+                <input type="text" name="recipename" maxlength="256" required>
+
+                <label for="servings">Servings:</label>
+                <input type="text" name="servings" maxlength="50">
+
+                <label for="preptime">Prep Time (in minutes):</label>
+                <input type="number" name="preptime" min="0" max="2147483647">
+
+                <label for="cookingtime">Cooking Time (in minutes):</label>
+                <input type="number" name="cookingtime" min="0" max="2147483647">
+
+                <input type="text" name="ingredientName1">
+                <input type="text" name="ingredientName2">
+                <input type="text" name="ingredientName3">
+
+                <button type="submit">Add Recipe</button>
+            </form>-->
+            <script src="resources/js/addtolist.js"></script> 
         </div>
     </body>
 </html>

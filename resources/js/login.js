@@ -24,6 +24,9 @@ formElement.addEventListener('submit', event => {
                 alert(data.error.errorMessage)
             } else {
                 sessionStorage.setItem('userID', data.userID)
+                sessionStorage.setItem('email', JSON.stringify(data.email))
+                sessionStorage.setItem('firstname', JSON.stringify(data.firstName))
+                sessionStorage.setItem('lastname', JSON.stringify(data.lastName))
                 if (data.recipes.recipeModels !== null){ 
                     sessionStorage.setItem('recipeList', JSON.stringify(data.recipes.recipeModels))
                 }

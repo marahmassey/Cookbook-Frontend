@@ -1,15 +1,4 @@
-// const recipeLink = document.querySelector('.name');
-
-// recipeLink.addEventListener('click', event => {
-//     event.preventDefault;
-
-//     var recipeID = recipeLink.id;
-//     var obj = '"recipeID": ' + recipeID;
-//     var data = JSON.stringify(obj);
-// });
-
 function loadSpecificRecipe(recipeID){
-    //var data = '{"recipeID":' + recipeID + '}';
     var obj = {"recipeID": recipeID};
     var data = JSON.stringify(obj);
 
@@ -27,29 +16,43 @@ function loadSpecificRecipe(recipeID){
             } else {
                 sessionStorage.setItem('directionsList', JSON.stringify(data.directions.directions));
                 sessionStorage.setItem('ingredientsList', JSON.stringify(data.ingredients.ingredients));
+                sessionStorage.setItem('recipeName', JSON.stringify(data.recipe.recipeName))
+                sessionStorage.setItem('servings', JSON.stringify(data.recipe.servings))
+                sessionStorage.setItem('prepTime', JSON.stringify(data.recipe.prepTime))
+                sessionStorage.setItem('cookTime', JSON.stringify(data.recipe.cookTime))
                 window.location.href = "specificrecipe.html";
-                //loadDetails(JSON.stringify(data.directions.directions), JSON.stringify(data.ingredients.ingredients));
             }
         })
         .catch(error => console.log(error));
 }
 
 function loadRecipeDetails(){
-    const directionsElement = document.getElementById("directions-list");
-    const ingredientsElement = document.getElementById("ingredients-list");
+    const nameEl = document.getElementById("recipename");
+    const servingsEl = document.getElementById("servings");
+    const prepTimeEl = document.getElementById("preptime");
+    const cookTimeEl = document.getElementById("cooktime");
+    const directionsEl = document.getElementById("directions-list");
+    const ingredientsEl = document.getElementById("ingredients-list");
+
+    nameEl.innerHTML = JSON.parse(sessionStorage.getItem('recipeName'));
+    servingsEl.innerHTML = "<b>Servings:</b> " + JSON.parse(sessionStorage.getItem('servings'));
+    prepTimeEl.innerHTML = "<b>Prep Time:</b> " + JSON.parse(sessionStorage.getItem('prepTime')) + " minutes";
+    cookTimeEl.innerHTML = "<b>Cook Time:</b> " + JSON.parse(sessionStorage.getItem('cookTime')) + " minutes";
+
+    //Loading directions and ingredients
     const directionsList = JSON.parse(sessionStorage.getItem('directionsList'));
     const ingredientsList = JSON.parse(sessionStorage.getItem('ingredientsList'));
 
     directionsList.forEach(e => {
         dir = document.createElement("li");
         dir.innerHTML = e.directionDescription;
-        directionsElement.appendChild(dir);
+        directionsEl.appendChild(dir);
     });
 
     ingredientsList.forEach(e => {
         ing = document.createElement("li");
         ing.innerHTML = e.ingredientName;
-        ingredientsElement.appendChild(ing);
+        ingredientsEl.appendChild(ing);
     });
 
 }

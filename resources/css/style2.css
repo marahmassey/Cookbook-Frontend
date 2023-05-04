@@ -411,22 +411,16 @@ a {
     background-color: #4c9e9e;
 }
 
-/* Add Recipe */
-.recipeform h1, .recipeform h3 {
-    text-align: center;
-}
-.recipeform div {
-    display: block;
-    text-align: center;
-}
+
+
+/* ----- ADD RECIPE ----- */
 .recipeform label {
     display: inline-block;
     text-align: right;
-    width: 15%;
+    width: 100px;
 }
 
 .recipeform input {
-    width: 79%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -435,13 +429,90 @@ a {
     box-sizing: border-box;
 }
 
+.div1 input {
+    width: 900px;
+}
+
+.div2 {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.time label {
+    width: auto;
+}
+
+.time input {
+    width: 80px;
+}
+
+.category select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 10%;
+}
+
+.ingredientlist input, .directionslist input {
+    width: 90%;
+}
+
+.ingredientlist ul, .directionslist ol {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.directionslist ol {
+    counter-reset: item;
+}
+
+.ingredientlist li, .directionslist li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+}
+
+.ingredientlist li::before, .directionslist li::before {
+    display: inline-block;
+    width: 3em;
+    margin-left: -2em;
+}
+
+.ingredientlist li::before {
+    content: "■";
+    text-align: center;
+}
+
+.directionslist li::before {
+    content: "Step " counter(item);
+    counter-increment: item;
+}
+
 .recipeform button {
     background-color: teal;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.recipeform button[type="button"] {
+    margin: 10px 20px;
+    width: 200px;
+    font-size: medium;
+}
+
+.recipeform button[type="submit"] {
+    margin: 8px 0;
     width: 50%;
+}
+
+.recipeform button:hover {
+    background-color: #4c9e9e;
 }
