@@ -5,7 +5,7 @@ formElement.addEventListener('submit', event => {
 
     const formData = new FormData(formElement);
     var object = {};
-    formData.forEach(function(value, key){
+    formData.forEach(function (value, key) {
         object[key] = value;
     });
     var data = JSON.stringify(object);

@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Group</title>
-        <link rel="stylesheet" href="resources/css/style2.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="resources/js/script.js"></script>
-        <script src="resources/js/header.js"></script>
-    </head>
-    <body>
-        <header-component></header-component>
 
-        <!-- Options Bar -->
-        <div class="options-container">
-            <!-- Buttons -->
-            <div class="options-buttons">
-                <!-- Add Recipe Button -->
-                <button class="opt-btn">Edit Group</button>
-                <button class="opt-btn">Manage Recipes</button>
-                
-                <!-- Category Dropdown -->
-                <div class="dropdown">
-                    <button class="opt-btn">Categories</button>
-                    <div class="dropdown-options">
-                        <a href="#">Main Courses</a>               
-                        <a href="#">Appetizers</a>
-                        <a href="#">Side Dishes</a>
-                        <a href="#">Desserts</a>
-                        <a href="#">Entres</a>
-                        <a href="#">Soups</a>
-                        <a href="#">Snacks</a>
-                        <a href="#">Beverages</a>
-                    </div>
-                </div> 
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Group</title>
+    <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/header.js"></script>
+</head>
 
-            <!-- Search Bar -->
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-        
-        <!-- Recipes List -->
-        <div class="pagebody">
-            <div class="group-page-container">
-                <h1>Massey Family Recipes</h1>
-                <img src="resources/images/family-picture.jpg">
-                <h3>Admin: Robin Massey</h3>
-                <h4>Members: Halee Massey, Grandma Massey, and 6 more</h4>
+<body>
+    <header-component></header-component>
+
+    <!-- Options Bar -->
+    <div class="options-container">
+        <!-- Buttons -->
+        <div class="options-buttons">
+            <!-- Add Recipe Button -->
+            <button class="opt-btn">Edit Group</button>
+            <button class="opt-btn">Manage Recipes</button>
+
+            <!-- Category Dropdown -->
+            <div class="dropdown">
+                <button class="opt-btn">Categories</button>
+                <div class="dropdown-options">
+                    <a href="#">Main Courses</a>
+                    <a href="#">Sides</a>
+                    <a href="#">Appetizers</a>
+                    <a href="#">Desserts</a>
+                    <a href="#">Snacks</a>
+                    <a href="#">Beverages</a>
+                </div>
             </div>
         </div>
 
-        <div class="pagebody">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Group Information -->
+    <div class="pagebody">
+        <div class="group-page-container">
+            <h1>Massey Family Recipes</h1>
+            <img src="resources/images/family-picture.jpg">
+            <h3>Admin: Robin Massey</h3>
+            <h4>Members: Halee Massey, Grandma Massey, and 6 more</h4>
+        </div>
+    </div>
+
+    <!-- Recipes List -->
+    <!-- <div class="pagebody">
             <div class="recipe-container">
                 <img src="resources/images/black-forest-cake.jpg" alt="Black Forest Cake">
                 <div class="recipe-info">
@@ -84,8 +85,9 @@
                     <h4>Time: 30m</h4>
                     <h4>Categories: Main Course, Soup</h4>
                 </div>
-            </div>
+            </div> -->
 
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>

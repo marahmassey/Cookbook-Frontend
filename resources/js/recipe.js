@@ -1,10 +1,10 @@
 class Recipe extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
-  
+
     connectedCallback() {
-      this.innerHTML = `
+        this.innerHTML = `
         <style>
             .recipe-container {
                 display: flex;
@@ -47,6 +47,6 @@ class Recipe extends HTMLElement {
         </div>
       `;
     }
-  }
-  
-  customElements.define('recipe-component', Recipe);
+}
+
+customElements.define('recipe-component', Recipe);

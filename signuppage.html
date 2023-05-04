@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="resources/css/style.css">
-    </head>
-    <body>
-        <div class="formbody">
-            <h1>Sign Up</h1>
-            <form action="myrecipespage.html" method="post" class="form">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" maxlength="50" required>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" maxlength="50" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" maxlength="50" required>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" maxlength="50" required>
+<body>
+    <div class="formbody">
+        <h1>Sign Up</h1>
+        <form action="myrecipespage.html" method="post" class="form">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" maxlength="50" required>
 
-                <!-- <label for="confirm_pass">Confirm Password:</label>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" maxlength="50" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" maxlength="50" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="50" required>
+
+            <!-- <label for="confirm_pass">Confirm Password:</label>
                 <input type="password" id="confirm_pass" name="confirm_pass" required onkeyup="validate_password()">
 
                 <span id="wrong_pass_alert"></span> -->
 
-                <button type="submit" id="create_btn">Create Account</button>
-            </form>
-            <p class="centertext">Already Have An Account? <a href="loginpage.html">Login</a></p>
+            <button type="submit" id="create_btn">Create Account</button>
+        </form>
+        <p class="centertext">Already Have An Account? <a href="loginpage.html">Login</a></p>
 
-            <script src="resources/js/createuser.js"></script>
-            <!-- <script src="script.js"></script> -->
-        </div>
-    </body>
+        <script src="resources/js/createuser.js"></script>
+        <!-- <script src="script.js"></script> -->
+    </div>
+</body>
+
 </html>

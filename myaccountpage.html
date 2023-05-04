@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Account</title>
-        <link rel="stylesheet" href="resources/css/style2.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="resources/js/script.js"></script>
-        <script src="resources/js/header.js"></script>
-        <script src="resources/js/loadaccount.js"></script>
-    </head>
-    <body onload="populateAccount()">
-        <header-component></header-component>
 
-        <div class="pagebody">
-            <div class="personal-info-container">
-                <h1>Personal Info <button type="submit"><i class="fa fa-edit"></i></button></h1>
-                <div class="img-table-container">
-                    <img src="resources/images/profile-pic.png">
-                    <table class="table-info">
-                        <tr>
-                            <td class="table-label">Name:</td>
-                            <td class="personal-info" id="firstname">Firstname</td>
-                            <td class="personal-info" id="lastname">Lastname</td>
-                        </tr>
-                        <tr>
-                            <td class="table-label">Email:</td>
-                            <td colspan="2" class="personal-info" id="email">example@email.com</td>
-                        </tr>
-                    </table>
-                </div>
-                <button class="update-btn" onclick="window.location.href = 'changepass.html';">Update Password</button>
+<head>
+    <meta charset="UTF-8">
+    <title>My Account</title>
+    <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/header.js"></script>
+    <script src="resources/js/loadaccount.js"></script>
+</head>
+
+<body onload="populateAccount()">
+    <header-component></header-component>
+
+    <div class="pagebody">
+        <div class="personal-info-container">
+            <h1>Personal Info <button type="submit"><i class="fa fa-edit"></i></button></h1>
+            <div class="img-table-container">
+                <img src="resources/images/profile-pic.png">
+                <table class="table-info">
+                    <tr>
+                        <td class="table-label">Name:</td>
+                        <td class="personal-info" id="firstname">Firstname</td>
+                        <td class="personal-info" id="lastname">Lastname</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Email:</td>
+                        <td colspan="2" class="personal-info" id="email">example@email.com</td>
+                    </tr>
+                </table>
             </div>
+            <button class="update-btn" onclick="window.location.href = 'changepass.html';">Update Password</button>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

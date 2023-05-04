@@ -1,22 +1,22 @@
 var ingCounter = 1;
 var dirCounter = 1;
 
-function addIngredient(){
+function addIngredient() {
     ingCounter++;
     var node = document.createElement('li');
     var inputNode = document.createElement('input');
     inputNode.setAttribute('type', "text");
-    inputNode.setAttribute('name', 'ingredientName'+ingCounter)
+    inputNode.setAttribute('name', 'ingredientName' + ingCounter)
     node.appendChild(inputNode);
     document.getElementById("ing-list").appendChild(node);
 }
 
-function addDirection(){
+function addDirection() {
     dirCounter++;
     var node = document.createElement('li');
     var inputNode = document.createElement('input');
     inputNode.setAttribute('type', "text");
-    inputNode.setAttribute('name', 'directionName'+dirCounter)
+    inputNode.setAttribute('name', 'directionName' + dirCounter)
     node.appendChild(inputNode);
     document.getElementById("dir-list").appendChild(node);
 }
@@ -32,19 +32,19 @@ fileInput.addEventListener('change', async (event) => {
 
     const files = event.srcElement.files;
     const inputKey = fileInput.getAttribute('name');
-    
+
     const filePromises = Object.entries(files).map(item => {
         return new Promise((resolve, reject) => {
             const [index, file] = item
             const reader = new FileReader();
             reader.readAsBinaryString(file);
 
-            reader.onload= function(event){
+            reader.onload = function (event) {
                 myFiles[inputKey] = btoa(event.target.result)
                 resolve()
             };
 
-            reader.onerror = function(){
+            reader.onerror = function () {
                 console.log("Couldn't read the file");
                 reject()
             };
@@ -62,12 +62,12 @@ fileInput.addEventListener('change', async (event) => {
         })
 });
 
+//Form event listener
 const formElement = document.querySelector('.recipeform');
-
 const handleForm = async (event) => {
     event.preventDefault();
 
-    if(!isFilesReady){
+    if (!isFilesReady) {
         console.log('Files still getting processed')
         return
     }
@@ -82,15 +82,15 @@ const handleForm = async (event) => {
         'directions': [],
         'userID': JSON.parse(sessionStorage.getItem('userID')),
     };
-    
+
     //Adding to ingredient list
-    for(let i = 1; i<=ingCounter; i++){
-        object['ingredients'].push(formElement.elements["ingredientName"+i].value);
+    for (let i = 1; i <= ingCounter; i++) {
+        object['ingredients'].push(formElement.elements["ingredientName" + i].value);
     }
 
     //Adding to direction list
-    for(let i = 1; i<=dirCounter; i++){
-        object['directions'].push(formElement.elements["directionName"+i].value);
+    for (let i = 1; i <= dirCounter; i++) {
+        object['directions'].push(formElement.elements["directionName" + i].value);
     }
 
     Object.entries(myFiles).map(item => {

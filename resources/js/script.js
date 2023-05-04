@@ -1,4 +1,4 @@
-function logout(){
+function logout() {
     sessionStorage.clear();
     window.location.href = "loginpage.html";
 }
@@ -12,18 +12,18 @@ function closeForm() {
 }
 
 //Tabs for recipe page
-function openTab(evt, tabName){
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++){
+    for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++){
+    for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
@@ -32,11 +32,11 @@ function openTab(evt, tabName){
     evt.currentTarget.className += " active";
 }
 
-function validate_password(){
+function validate_password() {
     var pass = document.getElementById('password').value;
     var confirm_pass = document.getElementById('confirm_pass').value;
 
-    if(pass != confirm_pass){
+    if (pass != confirm_pass) {
         document.getElementById('wrong_pass_alert').style.color = 'red';
         document.getElementById('wrong_pass_alert').innerHTML = 'Password does not match';
         document.getElementById('create_btn').disabled = true;

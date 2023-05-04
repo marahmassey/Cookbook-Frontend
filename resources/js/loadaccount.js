@@ -1,4 +1,4 @@
-function populateAccount(){
+function populateAccount() {
     const email = JSON.parse(sessionStorage.getItem('email'));
     const fname = JSON.parse(sessionStorage.getItem('firstname'));
     const lname = JSON.parse(sessionStorage.getItem('lastname'));

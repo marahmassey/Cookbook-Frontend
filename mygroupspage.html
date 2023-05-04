@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Groups</title>
-        <link rel="stylesheet" href="resources/css/style2.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="resources/js/script.js"></script>
-        <script src="resources/js/header.js"></script>
-    </head>
-    <body>
-        <header-component></header-component>
 
-        <!-- Options Bar -->
-        <div class="options-container">
-            <!-- New Group Button -->
-            <div class="options-buttons">
-                <button class="opt-btn" onclick="openForm()">Make A New Group</button>
-            </div>
-            
-            <!-- Search Bar -->
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>My Groups</title>
+    <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/header.js"></script>
+</head>
 
-            <!-- New Group Form Popup-->
-            <div class="form-popup" id="myForm">
-                <form class="form-container">
-                    <h1>New Group</h1>
+<body>
+    <header-component></header-component>
 
-                    <label for="groupname">Group Name:</label>
-                    <input type="text" name="groupname" required>
-
-                    <button type="submit" class="btn">Make Group</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-            </div>
+    <!-- Options Bar -->
+    <div class="options-container">
+        <!-- New Group Button -->
+        <div class="options-buttons">
+            <button class="opt-btn" onclick="openForm()">Make A New Group</button>
         </div>
 
-        <!-- Group List -->
-        <div class="pagebody">
-            <div class="group-container">
-                <div class="group-item">
-                    <img src="resources/images/family-picture.jpg">
-                    <a href="specificgroup.html">Massey Family Recipes</a>
-                </div>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
 
-                <div class="group-item">
-                    <img src="resources/images/family2.png">
-                    <a href="#">Goofy Goobers Group</a>
-                </div>
+        <!-- New Group Form Popup-->
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>New Group</h1>
 
-                <div class="group-item">
-                    <img src="resources/images/family3.jpg">
-                    <a href="#">Cooper Cookbook</a>
-                </div>
+                <label for="groupname">Group Name:</label>
+                <input type="text" name="groupname" required>
 
-                <div class="group-item">
-                    <img src="resources/images/family4.jpg">
-                    <a href="#">Stapley and Keilbart Families</a>
-                </div>
+                <button type="submit" class="btn">Make Group</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
 
-                <div class="group-item">
-                    <img src="resources/images/family5.jpg">
-                    <a href="#">Friends and Family</a>
-                </div>
+    <!-- Group List -->
+    <div class="pagebody">
+        <div class="group-container">
+            <div class="group-item">
+                <img src="resources/images/family-picture.jpg">
+                <a href="specificgroup.html">Massey Family Recipes</a>
+            </div>
 
-                <div class="group-item">
-                    <img src="resources/images/family6.jpeg">
-                    <a href="#">Lilith and Family</a>
-                </div>
+            <div class="group-item">
+                <img src="resources/images/family2.png">
+                <a href="#">Goofy Goobers Group</a>
+            </div>
+
+            <div class="group-item">
+                <img src="resources/images/family3.jpg">
+                <a href="#">Cooper Cookbook</a>
+            </div>
+
+            <div class="group-item">
+                <img src="resources/images/family4.jpg">
+                <a href="#">Stapley and Keilbart Families</a>
+            </div>
+
+            <div class="group-item">
+                <img src="resources/images/family5.jpg">
+                <a href="#">Friends and Family</a>
+            </div>
+
+            <div class="group-item">
+                <img src="resources/images/family6.jpeg">
+                <a href="#">Lilith and Family</a>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

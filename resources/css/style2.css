@@ -66,7 +66,7 @@ a {
     border-radius: 10px;
 }
 
-.search-container button:hover{
+.search-container button:hover {
     background: #4c9e9e;
 }
 
@@ -99,7 +99,7 @@ a {
     position: absolute;
     overflow: auto;
     background-color: #fff;
-    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .dropdown:hover .dropdown-options {
@@ -295,7 +295,9 @@ a {
     padding: 5px;
 }
 
-.group-page-container h1, .group-page-container h3, .group-page-container h4 {
+.group-page-container h1,
+.group-page-container h3,
+.group-page-container h4 {
     text-align: center;
 }
 
@@ -323,7 +325,7 @@ a {
 
 
 /* ----- ACCOUNT PAGE ----- */
-.personal-info-container button[type="submit"]{
+.personal-info-container button[type="submit"] {
     font-size: 25px;
     padding: 5px;
     color: red;
@@ -458,11 +460,13 @@ a {
     width: 10%;
 }
 
-.ingredientlist input, .directionslist input {
+.ingredientlist input,
+.directionslist input {
     width: 90%;
 }
 
-.ingredientlist ul, .directionslist ol {
+.ingredientlist ul,
+.directionslist ol {
     margin-left: 0;
     padding-left: 0;
 }
@@ -471,13 +475,15 @@ a {
     counter-reset: item;
 }
 
-.ingredientlist li, .directionslist li {
+.ingredientlist li,
+.directionslist li {
     display: block;
     margin-bottom: .5em;
     margin-left: 2em;
 }
 
-.ingredientlist li::before, .directionslist li::before {
+.ingredientlist li::before,
+.directionslist li::before {
     display: inline-block;
     width: 3em;
     margin-left: -2em;

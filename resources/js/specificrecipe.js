@@ -1,5 +1,5 @@
-function loadSpecificRecipe(recipeID){
-    var obj = {"recipeID": recipeID};
+function loadSpecificRecipe(recipeID) {
+    var obj = { "recipeID": recipeID };
     var data = JSON.stringify(obj);
 
     fetch("https://localhost:5001/api/recipe/v1/recipe", {
@@ -8,7 +8,7 @@ function loadSpecificRecipe(recipeID){
             "Content-Type": "application/json"
         },
         body: data
-    })  .then(res => res.json())
+    }).then(res => res.json())
         .then(data => {
             console.log(data)
             if (data.error !== null) {
@@ -26,7 +26,7 @@ function loadSpecificRecipe(recipeID){
         .catch(error => console.log(error));
 }
 
-function loadRecipeDetails(){
+function loadRecipeDetails() {
     const nameEl = document.getElementById("recipename");
     const servingsEl = document.getElementById("servings");
     const prepTimeEl = document.getElementById("preptime");

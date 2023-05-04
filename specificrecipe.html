@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Recipe</title>
-        <link rel="stylesheet" href="resources/css/style2.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="resources/js/script.js"></script>
-        <script src="resources/js/header.js"></script>
-        <script src="resources/js/specificrecipe.js"></script>
-    </head>
 
-    <body onload="loadRecipeDetails()">
-        <header-component></header-component>
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/header.js"></script>
+    <script src="resources/js/specificrecipe.js"></script>
+</head>
 
-        <div class="pagebody">
-            <img class="recipe-banner" src="resources/images/black-forest-cake-banner.jpg" alt="Black Forest Cake">
-            
-            <div class="recipe-name">
-                <h1 id="recipename"></h1>
-                <button type="submit"><i class="fa fa-edit"></i></button>
-            </div>
+<body onload="loadRecipeDetails()">
+    <header-component></header-component>
 
-            <div class="info">
-                <p id="servings"><b>Servings:</b></p>
-                <p id="preptime"><b>Prep Time:</b></p>
-                <p id="cooktime"><b>Cook Time:</b></p>
-            </div>
+    <div class="pagebody">
+        <img class="recipe-banner" src="resources/images/banner.jpg" alt="Banner">
 
-            <!-- Tabs -->
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Ingredients')" id="defaultOpen">Ingredients</button>
-                <button class="tablinks" onclick="openTab(event, 'Directions')">Directions</button>
-            </div>
-
-            <!-- Tab Content -->
-            <div id="Ingredients" class="tabcontent">
-                <ul id="ingredients-list">
-                </ul>
-            </div>
-
-            <div id="Directions" class="tabcontent">
-                <ol id="directions-list">
-                </ol>
-            </div>
-            
-            <script>
-                //By default, the tab with with id="defaultOpen" is displayed
-                document.getElementById("defaultOpen").click();
-            </script>
+        <div class="recipe-name">
+            <h1 id="recipename"></h1>
+            <button type="submit"><i class="fa fa-edit"></i></button>
         </div>
-    </body>
+
+        <div class="info">
+            <p id="servings"><b>Servings:</b></p>
+            <p id="preptime"><b>Prep Time:</b></p>
+            <p id="cooktime"><b>Cook Time:</b></p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Ingredients')" id="defaultOpen">Ingredients</button>
+            <button class="tablinks" onclick="openTab(event, 'Directions')">Directions</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="Ingredients" class="tabcontent">
+            <ul id="ingredients-list">
+            </ul>
+        </div>
+
+        <div id="Directions" class="tabcontent">
+            <ol id="directions-list">
+            </ol>
+        </div>
+
+        <script>
+            //By default, the tab with with id="defaultOpen" is displayed
+            document.getElementById("defaultOpen").click();
+        </script>
+    </div>
+</body>
+
 </html>

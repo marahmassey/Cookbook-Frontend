@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Recipes</title>
-        <link rel="stylesheet" href="resources/css/style2.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="resources/js/script.js"></script>
-        <script src="resources/js/header.js"></script>
-        <script src="resources/js/loadrecipelist.js"></script>
-        <script src="resources/js/recipe.js"></script>
-        <script src="resources/js/specificrecipe.js"></script>
-    </head>
-    <body onload="listRecipes()">
-        <header-component></header-component>
 
-        <!-- Options Bar -->
-        <div class="options-container">
-            <!-- Buttons -->
-            <div class="options-buttons">
-                <!-- Add Recipe Button -->
-                <button class="opt-btn" onclick="window.location.href = 'addrecipe.html';">Add Recipe</button>
-                
-                <!-- Category Dropdown -->
-                <div class="dropdown">
-                    <button class="opt-btn">Categories</button>
-                    <div class="dropdown-options">
-                        <a href="#">Main Courses</a>               
-                        <a href="#">Appetizers</a>
-                        <a href="#">Side Dishes</a>
-                        <a href="#">Desserts</a>
-                        <a href="#">Entres</a>
-                        <a href="#">Soups</a>
-                        <a href="#">Snacks</a>
-                        <a href="#">Beverages</a>
-                    </div>
-                </div> 
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="resources/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/header.js"></script>
+    <script src="resources/js/loadrecipelist.js"></script>
+    <script src="resources/js/recipe.js"></script>
+    <script src="resources/js/specificrecipe.js"></script>
+</head>
 
-            <!-- Search Bar -->
-            <div class="search-container">
-                <form>
-                    <input type="text" placeholder="Search" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+<body onload="listRecipes()">
+    <header-component></header-component>
+
+    <!-- Options Bar -->
+    <div class="options-container">
+        <!-- Buttons -->
+        <div class="options-buttons">
+            <!-- Add Recipe Button -->
+            <button class="opt-btn" onclick="window.location.href = 'addrecipe.html';">Add Recipe</button>
+
+            <!-- Category Dropdown -->
+            <div class="dropdown">
+                <button class="opt-btn">Categories</button>
+                <div class="dropdown-options">
+                    <a href="#">Main Courses</a>
+                    <a href="#">Sides</a>
+                    <a href="#">Appetizers</a>
+                    <a href="#">Desserts</a>
+                    <a href="#">Snacks</a>
+                    <a href="#">Beverages</a>
+                </div>
             </div>
         </div>
 
-        <!-- Recipes List - Recipes listed when page is loaded -->
-        <div class="pagebody"></div>
-    </body>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Recipes List - Recipes listed when page is loaded -->
+    <div class="pagebody"></div>
+</body>
+
 </html>
