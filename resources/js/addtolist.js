@@ -102,7 +102,7 @@ const handleForm = async (event) => {
 
     fetch('http://api.cookistrys.com/api/recipe/v1/recipe'
         /*'https://localhost:5001/api/recipe/v1/createrecipe'*/, {
-        method: 'GET',
+        method: 'POST',
         headers: {
             "Content-Type": "application/json"
         },
