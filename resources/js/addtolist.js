@@ -100,7 +100,8 @@ const handleForm = async (event) => {
 
     var data = JSON.stringify(object);
 
-    fetch('https://localhost:5001/api/recipe/v1/createrecipe', {
+    fetch('http://api.cookistrys.com/api/recipe/v1/createrecipe'
+        /*'https://localhost:5001/api/recipe/v1/createrecipe'*/, {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"

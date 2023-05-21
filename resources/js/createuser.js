@@ -10,7 +10,8 @@ formElement.addEventListener('submit', event => {
     });
     var data = JSON.stringify(object);
 
-    fetch("https://localhost:5001/api/account/v1/user", {
+    fetch('http://api.cookistrys.com/api/account/v1/user'
+        /*"https://localhost:5001/api/account/v1/user"*/, {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"

@@ -1,0 +1,64 @@
+.group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.group-item {
+    width: 30%;
+    position: relative;
+}
+
+.group-item img {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+    z-index: -1;
+}
+
+.group-item a {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    color: teal;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Specific Group Page */
+.group-page-container {
+    margin: 15px;
+    padding: 5px;
+}
+
+.group-page-container h1,
+.group-page-container h3,
+.group-page-container h4 {
+    text-align: center;
+}
+
+.group-page-container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 70%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.add-btn {
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}

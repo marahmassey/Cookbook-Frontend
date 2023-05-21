@@ -2,7 +2,8 @@ function loadSpecificRecipe(recipeID) {
     var obj = { "recipeID": recipeID };
     var data = JSON.stringify(obj);
 
-    fetch("https://localhost:5001/api/recipe/v1/recipe", {
+    fetch('http://api.cookistrys.com/api/recipe/v1/recipe'
+        /*"https://localhost:5001/api/recipe/v1/recipe"*/, {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
