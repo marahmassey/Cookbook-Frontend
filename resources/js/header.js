@@ -95,7 +95,7 @@ class Header extends HTMLElement {
         <header>
             <nav>
                 <!-- Logo or Website Name-->
-                <h1 class="logo">Cookistry</h1>
+                <h1 class="logo">Cookistrys</h1>
                 <!-- Menu -->
                 <ul class="navlinks">
                     <!-- Checkbox -->
