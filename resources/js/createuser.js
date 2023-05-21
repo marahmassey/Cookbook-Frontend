@@ -25,7 +25,7 @@ formElement.addEventListener('submit', event => {
                 alert(data.error.errorMessage);
             } else {
                 alert("User has been created");
-                window.location.href = "loginpage.html";
+                window.location.href = "index.html";
             }
         })
         .catch(error => console.log(error));

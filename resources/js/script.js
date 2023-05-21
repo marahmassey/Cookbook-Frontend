@@ -1,6 +1,6 @@
 function logout() {
     sessionStorage.clear();
-    window.location.href = "loginpage.html";
+    window.location.href = "index.html";
 }
 
 function openForm() {
